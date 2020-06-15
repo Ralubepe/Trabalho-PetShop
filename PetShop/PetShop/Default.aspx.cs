@@ -13,5 +13,24 @@ namespace PetShop
         {
 
         }
+
+        protected void btnEntrar_Click(object sender, EventArgs e)
+        {
+            string usuario = txtUsuario.Text;
+            string senha = txtSenha.Text;
+
+            SistemaPetShopEntities conexao = new SistemaPetShopEntities();
+            Usuario user = conexao.Usuario.FirstOrDefault(linha=>linha.Usuario1.Equals(usuario) && linha.Senha.Equals(senha));
+            if(user != null)
+            {
+                Session["usuario_logado"] = user;
+                Response.Redirect("Principal.aspx");
+            }
+        }
+
+        protected void btnCriar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Cadastro.aspx");
+        }
     }
 }

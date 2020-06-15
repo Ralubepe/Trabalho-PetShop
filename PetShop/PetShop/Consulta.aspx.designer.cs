@@ -10,7 +10,7 @@
 namespace PetShop {
     
     
-    public partial class Default {
+    public partial class Consulta {
         
         /// <summary>
         /// Controle form1.
@@ -22,93 +22,75 @@ namespace PetShop {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle vsLogin.
+        /// Controle lblConsultaUsuario.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary vsLogin;
+        protected global::System.Web.UI.WebControls.Label lblConsultaUsuario;
         
         /// <summary>
-        /// Controle lblLogin.
+        /// Controle txtBuscaUsuario.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLogin;
+        protected global::System.Web.UI.WebControls.TextBox txtBuscaUsuario;
         
         /// <summary>
-        /// Controle txtUsuario.
+        /// Controle btnBuscar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUsuario;
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
-        /// Controle vltUsuario1.
+        /// Controle gridUsuarios.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator vltUsuario1;
+        protected global::System.Web.UI.WebControls.GridView gridUsuarios;
         
         /// <summary>
-        /// Controle lblSenha.
+        /// Controle lblConsultaAgenda.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSenha;
+        protected global::System.Web.UI.WebControls.Label lblConsultaAgenda;
         
         /// <summary>
-        /// Controle txtSenha.
+        /// Controle txtBuscaAgenda.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenha;
+        protected global::System.Web.UI.WebControls.TextBox txtBuscaAgenda;
         
         /// <summary>
-        /// Controle vltSenha1.
+        /// Controle btnBuscarAgenda.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator vltSenha1;
+        protected global::System.Web.UI.WebControls.Button btnBuscarAgenda;
         
         /// <summary>
-        /// Controle btnEntrar.
+        /// Controle gridAgenda.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEntrar;
-        
-        /// <summary>
-        /// Controle lblCriar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCriar;
-        
-        /// <summary>
-        /// Controle btnCriar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCriar;
+        protected global::System.Web.UI.WebControls.GridView gridAgenda;
     }
 }

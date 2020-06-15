@@ -10,8 +10,24 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>Hello World</h1>
-            <h1>Hello Brazil</h1>
+            <asp:ValidationSummary ID="vsLogin" runat="server" ForeColor="Red" />
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="lblLogin" runat="server" Text="Usuário: "></asp:Label>
+            <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="vltUsuario1" runat="server" ControlToValidate="txtUsuario" ErrorMessage="Usuário obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblSenha" runat="server" Text="Senha: "></asp:Label>
+            <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="vltSenha1" runat="server" ControlToValidate="txtSenha" ErrorMessage="Senha obrigatória" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <br />
+            <asp:Button ID="btnEntrar" runat="server" OnClick="btnEntrar_Click" Text="Entrar" />
+            <br />
+            <br />
+            <asp:Label ID="lblCriar" runat="server" Text="Não possui conta?"></asp:Label>
+            <asp:Button ID="btnCriar" runat="server" OnClick="btnCriar_Click" Text="Criar" />
         </div>
     </form>
 </body>
